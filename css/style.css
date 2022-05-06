@@ -25,10 +25,10 @@ p {
     margin-bottom: 0px;
 }
 div#container1 {
-    background-color: pink;
+    background-color: red;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-rows: 0.2fr 6fr 1fr;
     grid-template-areas: 
     "navBar"
     "main"
@@ -54,7 +54,7 @@ main#container2 {
     background-color: purple;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
     grid-template-areas: 
     "section"
     "articles";
@@ -116,11 +116,22 @@ section.article3 {
     background-color: darkslateblue;
     grid-area: article3;
 }
-
+div.article3cards {
+    background-color: black;
+}
+div.artcile3Part1 {
+    display: flex;
+}
+div.artcile3Relou {
+    display: flex;
+    flex-direction: column;
+}
+div.cards {
+    background-color: wheat;
+}
 footer.basDePage {
     background-color: gray;
     grid-area: basDePage;
-
 }
 /*Format tablette*/
 @media screen and (max-width: 992px) and (min-width: 769px) {
@@ -139,26 +150,6 @@ footer.basDePage {
         "article1"
         "article3";
     }
-   /* header.navBar {
-        background-color: burlywood;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:
-        "logo logo"
-        "hebergement activites";
-    }
-    section#filtersContainer {
-        background-color: lightpink;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-        "romatic family"
-        "romatic romatic"
-        "romatic";
-        grid-area: filtres;
-    }*/
     div.headContainer {
         flex-direction: column;
     }
