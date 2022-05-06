@@ -103,13 +103,13 @@ section.article1 {
     grid-area: article1;
     border-radius: 15px;
     margin: 15px;
-    display: flex;
-    
 }
 div.artcile1Part1 {
+    background-color: darkolivegreen;
     display: flex;
 }
 div.artcile1Part2 {
+    background-color: darkseagreen;
     display: flex;
 }
 aside.article2 {
@@ -209,6 +209,12 @@ footer.basDePage {
     section.article1 {
         border-radius: 0px;
         margin: 0px;
+    }
+    div.artcile1Part1 {
+        flex-direction: column;
+    }
+    div.artcile1Part2 {
+        flex-direction: column;
     }
     aside.article2 {
         border-radius: 0px;
