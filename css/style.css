@@ -99,12 +99,19 @@ article#container3 {
     grid-area: articles;
 }
 section.article1 {
-    background-color: peru;
+    background-color: green;
     grid-area: article1;
     border-radius: 15px;
     margin: 15px;
+    display: flex;
+    
 }
-
+div.artcile1Part1 {
+    display: flex;
+}
+div.artcile1Part2 {
+    display: flex;
+}
 aside.article2 {
     background-color: indianred;
     grid-area: article2;
@@ -206,6 +213,9 @@ footer.basDePage {
     aside.article2 {
         border-radius: 0px;
         margin: 0px;
+    }
+    div.cardsWithIcon {
+        flex-direction: column;
     }
     div.article3cards {
         flex-direction: column;
