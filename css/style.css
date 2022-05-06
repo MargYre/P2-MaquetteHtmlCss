@@ -160,6 +160,14 @@ div.cards {
 footer.basDePage {
     background-color: gray;
     grid-area: basDePage;
+    display: flex;
+    
+}
+div.footInfo {
+    background-color: lightpink;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 /*Format tablette*/
 @media screen and (max-width: 992px) and (min-width: 769px) {
@@ -231,5 +239,12 @@ footer.basDePage {
     }
     div.artcile3Part2 {
         flex-direction: column;
+    }
+    footer.basDePage {
+        flex-direction: column;
+        flex: 1;
+    }
+    div.footInfo {
+        margin: 20px;
     }
 }
