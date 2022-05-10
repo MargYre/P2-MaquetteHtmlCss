@@ -37,18 +37,22 @@ div#container1 {
 }
 
 div.headContainer {
-    background-color: bisque;
+    background-color: #F2F2F2;
     display: flex;
 }
 div.logo {
-    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 90px;
+    background-image: url("../images/logo/Booki.png");
 }
 div.hybrid {
     background-color: darkcyan;
     flex-grow: 2;
 }
 div.hebergement {
-    background-color: darkblue;
+    background-color: lightgray;
 }
 main#container2 {
     background-color: purple;
@@ -135,7 +139,7 @@ div.artcile2Title {
     justify-content: space-evenly;
 }
 div.cardsWithIcon {
-    background-color: cornflowerblue;
+    background-color: blue;
     display: flex;
     justify-content: center;
     margin: 8px;
@@ -219,6 +223,12 @@ div.footInfo {
     }
     div.headContainer {
         flex-direction: column;
+    }
+    div.logo {
+        justify-content: center;
+        width: 300px;
+        height: 150px;
+        background-image: url("../images/logo/Booki@3x.png");
     }
     div.hybrid {
         display: none;
