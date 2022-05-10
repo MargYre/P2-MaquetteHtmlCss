@@ -19,13 +19,15 @@ body {
 h1,h2,h3,h4,h5,h6 {
     margin-top: 0px;
     margin-bottom: 0px;
+    font-family: 'Raleway', sans-serif;
 }
 p {
     margin-top: 0px;
     margin-bottom: 0px;
+    font-family: 'Raleway', sans-serif;
 }
 div#container1 {
-    background-color: red;
+    background-color: #F2F2F2;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 6fr 1fr;
@@ -35,13 +37,15 @@ div#container1 {
     "basDePage";
     height: 100vh;
 }
-
+header.navBar{
+    background-color: turquoise;
+}
 div.headContainer {
-    background-color: #red;
+    background-color: red;
     display: flex;
-    justify-content: center;
 }
 div.logo {
+    background-color: black;
     display: flex;
     width: 150px;
     height: 50px;
@@ -81,18 +85,18 @@ main#container2 {
     grid-area: main;
 }
 section#filtersContainer {
-    background-color: lightblue;
+    background-color: #F2F2F2;
     grid-area: section;
 }
 div.rechercheBar {
-    background-color: silver;
+    background-color: #F2F2F2;
     display: flex;
 }
 div.rechercheBarMobile {
     display: none;
 }
 div.filters {
-    background-color: skyblue;
+    background-color: #F2F2F2;
     display: flex;
     flex-wrap: wrap;
 }
@@ -236,7 +240,11 @@ div.footInfo {
         "article1"
         "article3";
     }
+    div.navBar {
+        flex-direction: column;
+    }
     div.headContainer {
+        flex-direction: column;
         flex-direction: column;
     }
     div.logo {
