@@ -53,6 +53,7 @@ div.logo {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    align-items: center;
 }
 div.hybrid {
     background-color: #F2F2F2;
@@ -94,6 +95,29 @@ div.rechercheBar {
 }
 div.rechercheBarMobile {
     display: none;
+}
+div.buttonLocalisationIcon {
+    background-color: lightgrey;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    align-items: center;
+}
+div.buttonResearch {
+    width: 150px;
+    height: 50px;
+    background-color: #0065FC;
+    color: #DEEBFF;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+div.buttonResearch:hover {
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 10px;
 }
 div.filters {
     background-color: #F2F2F2;
@@ -268,8 +292,22 @@ div.footInfo {
         display: none;
     }
     div.rechercheBarMobile {
-        background-color: lightcoral;
         display: flex;
+    }
+    div.buttonMagnifyingGlass {
+        width: 50px;
+        height: 50px;
+        background-color: #0065FC;
+        color: #DEEBFF;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    div.buttonMagnifyingGlass:hover {
+        background-color: #DEEBFF;
+        color: #0065FC;
+        border-radius: 10px;
     }
     section.article1 {
         border-radius: 0px;
