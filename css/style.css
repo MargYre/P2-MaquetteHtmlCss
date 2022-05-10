@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --color1: #0065FC;
+    --color2: #DEEBFF;
+    --color3: #F2F2F2;
+}
+
+body {
+    background-color: whitesmoke;
+    max-width: 992px;
+    margin: auto;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+div#container1 {
+    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 6fr 1fr;
+    grid-template-areas: 
+    "navBar"
+    "main"
+    "basDePage";
+    height: 100vh;
+}
+
+div.headContainer {
+    background-color: bisque;
+    display: flex;
+}
+div.logo {
+    background-color: cadetblue;
+}
+div.hybrid {
+    background-color: darkcyan;
+    flex-grow: 2;
+}
+div.hebergement {
+    background-color: darkblue;
+}
+main#container2 {
+    background-color: purple;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 3fr;
+    grid-template-areas: 
+    "section"
+    "articles";
+    grid-area: main;
+}
+section#filtersContainer {
+    background-color: lightblue;
+    grid-area: section;
+}
+div.rechercheBar {
+    background-color: silver;
+    display: flex;
+}
+div.rechercheBarMobile {
+    display: none;
+}
+div.filters {
+    background-color: skyblue;
+    display: flex;
+    flex-wrap: wrap;
+}
+div.filterRelou {
+    display: flex;
+    flex-wrap: wrap;
+}
+div.filter {
+    background-color: azure;
+    display: flex;
+}
+div.headInformation {
+    background-color: slateblue;
+    display: flex;
+}
+article#container3 {
+    background-color: lightgreen;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "article1 article2"
+    "article3 article3";
+    grid-area: articles;
+}
+section.article1 {
+    background-color: green;
+    grid-area: article1;
+    border-radius: 15px;
+    margin: 15px;
+}
+div.artcile1Part1 {
+    background-color: darkolivegreen;
+    display: flex;
+}
+/*ici*/
+div.cardImgB3 {
+    background-color: pink;
+}
+div.cardImgB3 img {
+    height: 100px;
+    object-fit: cover;
+}
+div.cardTextB3 {
+    background-color: darkslateblue;
+}
+div.artcile1Part2 {
+    background-color: darkseagreen;
+    display: flex;
+}
+aside.article2 {
+    background-color: indianred;
+    grid-area: article2;
+    border-radius: 15px;
+    margin: 15px;
+}
+div.artcile2Title {
+    background-color: darksalmon;
+    display: flex;
+    justify-content: space-evenly;
+}
+div.cardsWithIcon {
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+}
+div.cardDescripIcon {
+    background-color: coral;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+section.article3 {
+    background-color: darkslateblue;
+    grid-area: article3;
+}
+div.article3cards {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+div.artcile3Part1 {
+    display: flex;
+}
+div.artcile3Part2 {
+    display: flex;
+}
+div.artcile3Relou {
+    background-color: wheat;
+}
+div.cards {
+    background-color: white;
+    margin: 8px;
+}
+
+div.cardImgB5 {
+    background-color: darkslategray;
+}
+div.cardTextB5 {
+    background-color: darkslateblue;
+}
+footer.basDePage {
+    background-color: gray;
+    grid-area: basDePage;
+    display: flex;
+    
+}
+div.footInfo {
+    background-color: lightpink;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+/*Format tablette*/
+@media screen and (max-width: 992px) and (min-width: 769px) {
+    
+    header.navBar {
+        background-color: lightpink;
+    }
+    div.article3cards {
+        flex-direction: column;
+        justify-content: center;
+    }
+    div.artcile3Part1 {
+        justify-content: center;
+        margin: 10px;
+    }
+    div.artcile3Part2 {
+        justify-content: center;
+        margin: 10px;
+    }
+}
+/*Format mobile*/
+@media screen and (max-width: 768px)  {
+    article#container3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "article2"
+        "article1"
+        "article3";
+    }
+    div.headContainer {
+        flex-direction: column;
+    }
+    div.hybrid {
+        display: none;
+    }
+    div.filters {
+        flex-direction: column;
+    }
+    div.rechercheBar { 
+        display: none;
+    }
+    div.rechercheBarMobile {
+        background-color: lightcoral;
+        display: flex;
+    }
+    section.article1 {
+        border-radius: 0px;
+        margin: 0px;
+    }
+    div.artcile1Part1 {
+        flex-direction: column;
+    }
+    div.artcile1Part2 {
+        flex-direction: column;
+    }
+    aside.article2 {
+        border-radius: 0px;
+        margin: 0px;
+    }
+    div.cardsWithIcon {
+        flex-direction: column;
+    }
+    div.article3cards {
+        flex-direction: column;
+    }
+    div.artcile3Part1 {
+        flex-direction: column;
+    }
+    div.artcile3Part2 {
+        flex-direction: column;
+    }
+    footer.basDePage {
+        flex-direction: column;
+        flex: 1;
+    }
+    div.footInfo {
+        margin: 20px;
+    }
+}
