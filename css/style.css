@@ -37,22 +37,38 @@ div#container1 {
 }
 
 div.headContainer {
-    background-color: #F2F2F2;
+    background-color: #red;
     display: flex;
+    justify-content: center;
 }
 div.logo {
     display: flex;
-    justify-content: center;
     width: 150px;
-    height: 90px;
+    height: 50px;
     background-image: url("../images/logo/Booki.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 div.hybrid {
-    background-color: darkcyan;
+    background-color: #F2F2F2;
     flex-grow: 2;
 }
+div.hebergementBar {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+}
 div.hebergement {
-    background-color: lightgray;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+}
+div.activites {
+    background-color: #F2F2F2;
+    color:#0065FC;
+    display: flex;
+    flex-direction: row;
 }
 main#container2 {
     background-color: purple;
@@ -112,7 +128,6 @@ div.artcile1Part1 {
     background-color: darkolivegreen;
     display: flex;
 }
-/*ici*/
 div.cardImgB3 {
     background-color: pink;
 }
@@ -225,10 +240,15 @@ div.footInfo {
         flex-direction: column;
     }
     div.logo {
-        justify-content: center;
+        justify-content: space-between;
         width: 300px;
         height: 150px;
         background-image: url("../images/logo/Booki@3x.png");
+    }
+    div.hebergementBar {
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-direction: row;
     }
     div.hybrid {
         display: none;
