@@ -98,7 +98,7 @@ section#filtersContainer {
 div.rechercheBar {
     background-color: #F2F2F2;
     display: flex;
-    
+    padding: 10px;
 }
 div.rechercheBarMobile {
     display: none;
@@ -327,6 +327,7 @@ div.footInfo {
         align-items: center;
         justify-content: center;
         width: 100%;
+        padding: 10px;
     }
     div.buttonMagnifyingGlass {
         width: 10%;
