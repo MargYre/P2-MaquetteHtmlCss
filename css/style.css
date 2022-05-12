@@ -144,15 +144,19 @@ div.buttonResearch:hover {
 div.filters {
     background-color: #F2F2F2;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+}
+div.filter {
+    background-color: darkmagenta;
 }
 div.filterRelou {
     display: flex;
-    flex-wrap: wrap;
+    margin-right: 10px;
 }
 div.filter {
     background-color: azure;
     display: flex;
+    margin: 10px;
 }
 div.headInformation {
     background-color: slateblue;
@@ -316,10 +320,12 @@ div.footInfo {
     div.hybrid {
         display: none;
     }
-    div.filters {
+    div.filters { 
+        align-items: none;
         background-color: #DEEBFF;
         display: flex;
         flex-direction: column;
+        align-items: unset;
     }
     div.rechercheBar { 
         display: none;
