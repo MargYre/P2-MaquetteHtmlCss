@@ -2,424 +2,454 @@
 
 
 html {
-    font-family: 'Raleway', sans-serif;
+font-family: 'Raleway', sans-serif;
 }
 :root {
-    --color1: #0065FC;
-    --color2: #DEEBFF;
-    --color3: #F2F2F2;
+--color1: #0065FC;
+--color2: #DEEBFF;
+--color3: #F2F2F2;
 }
 
 body {
-    background-color: whitesmoke;
-    max-width: 992px;
-    margin: auto;
+background-color: whitesmoke;
+max-width: 992px;
+margin: auto;
 }
 h1,h2,h3,h4,h5,h6 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    
+margin-top: 0px;
+margin-bottom: 0px;
+
 }
 p {
-    margin-top: 0px;
-    margin-bottom: 0px;
+margin-top: 0px;
+margin-bottom: 0px;
 }
 div#container1 {
-    background-color: #F2F2F2;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 6fr 1fr;
-    grid-template-areas: 
-    "navBar"
-    "main"
-    "basDePage";
-    height: 100vh;
+background-color: #F2F2F2;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 0.2fr 6fr 1fr;
+grid-template-areas:
+"navBar"
+"main"
+"basDePage";
+height: 100vh;
 }
 header.navBar{
-    background-color: turquoise;
+background-color: turquoise;
 }
 
 div.headContainer {
-    background-color: red;
-    display: flex;
+background-color: red;
+display: flex;
 }
 div.logo {
-    background-color: #F2F2F2;
-    display: flex;
-    
-    /*object-fit: cover;
-    background-image: url("../images/logo/Booki.png");
-    background-size: contain;
-    background-repeat: no-repeat;*/
-}
-div.logo a{
-
-}
-div.logo a:hover{
-
+background-color: #F2F2F2;
+display: flex;
+/*object-fit: cover;
+background-image: url("../images/logo/Booki.png");
+background-size: contain;
+background-repeat: no-repeat;*/
 }
 div.logo img{
-    width: 100%;
-    height: 100px;
+width: 100%;
+height: 100px;
 }
 div.hybrid {
-    background-color: #F2F2F2;
-    flex-grow: 2;
+background-color: #F2F2F2;
+flex-grow: 2;
 }
 div.hebergementBar {
-    background-color: grey;
-    display: flex;
+background-color: grey;
+display: flex;
 }
 div.hebergementBar a {
-    color: black;
-    text-decoration:none;
-    margin-right: 20px;
-    padding-top: 40px;
-    border-top: 3px solid transparent;
+color: black;
+text-decoration:none;
+margin-right: 20px;
+padding-top: 40px;
+border-top: 3px solid transparent;
 }
 div.hebergementBar a:hover {
-    color: #0065FC;
-    border-top: 3px solid blue;
+color: #0065FC;
+border-top: 3px solid blue;
 }
 main#container2 {
-    background-color: purple;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 3fr;
-    grid-template-areas: 
-    "section"
-    "articles";
-    grid-area: main;
+background-color: purple;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 0.5fr 3fr;
+grid-template-areas:
+"section"
+"articles";
+grid-area: main;
 }
 section#filtersContainer {
-    background-color: #F2F2F2;
-    grid-area: section;
+background-color: #F2F2F2;
+grid-area: section;
 }
 div.rechercheBar {
-    background-color: #F2F2F2;
-    display: flex;
-    padding: 10px;
+background-color: #F2F2F2;
+display: flex;
+padding: 10px;
 }
 div.rechercheBarMobile {
-    display: none;
+display: none;
 }
 div.buttonLocalisationIcon {
-    background-color: lightgrey;
-    display: flex;
-    width: 7%;
-    height: 50px;
-    border-radius: 10px 0px 0px 10px;
-    align-items: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+background-color: lightgrey;
+display: flex;
+width: 7%;
+height: 50px;
+border-radius: 10px 0px 0px 10px;
+align-items: center;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 input.searchBar{
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    padding: 20px;
-    border-top:  0.5px solid lightslategray;
-    border-bottom: 0.5px solid lightslategray;
+height: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+border: none;
+padding: 20px;
+border-top: 0.5px solid lightslategray;
+border-bottom: 0.5px solid lightslategray;
 }
 div.buttonResearch {
-    width: 150px;
-    height: 50px;
-    background-color: #0065FC;
-    color: #DEEBFF;
-    border-radius: 0px 10px 10px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+width: 150px;
+height: 50px;
+background-color: #0065FC;
+color: #DEEBFF;
+border-radius: 0px 10px 10px 0px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
 }
 div.buttonResearch:hover {
-    background-color: #DEEBFF;
-    color: #0065FC;
-    border-radius: 10px;
+background-color: #DEEBFF;
+color: #0065FC;
+border-radius: 10px;
 }
 div.filters {
-    background-color: #F2F2F2;
-    display: flex;
-    align-items: center;
+background-color: #F2F2F2;
+display: flex;
+align-items: center;
 }
 div.filterRelou {
-    display: flex;
+display: flex;
 }
 div.filter {
-    background-color: #F2F2F2;
-    display: flex;
-    border: 2px solid lightgrey;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    border-radius: 20px;
+background-color: #F2F2F2;
+display: flex;
+border: 2px solid lightgrey;
+justify-content: center;
+align-items: center;
+margin: 10px;
+border-radius: 20px;
 }
 div.filterIcon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 25px;
-    height: 40px;
-    width: 40px;
-    background-color: lightskyblue;
-    color: #0065FC;
-    margin-left: -3px;
-    margin-top: -2px;
-    margin-bottom: -2px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 25px;
+height: 40px;
+width: 40px;
+background-color: lightskyblue;
+color: #0065FC;
+margin-left: -3px;
+margin-top: -2px;
+margin-bottom: -2px;
 }
 div.filterIcon:hover {
-    color: white;
+color: white;
 }
 div.headInformation {
-    background-color: slateblue;
-    display: flex;
+background-color: #F2F2F2;
+display: flex;
+align-items: center;
+}
+div.infomationIcon {
+display: flex;
+align-items: center;
+justify-content: center;
+color: #0065FC;
+width: 25px;
+height: 25px;
+border: 1px solid lightgray;
+border-radius: 25px;
+margin-right: 5px;
 }
 article#container3 {
-    background-color: lightgreen;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "article1 article2"
-    "article3 article3";
-    grid-area: articles;
+background-color: lightgreen;
+display: grid;
+grid-template-columns: 2fr 1fr;
+grid-template-rows: 1fr 1fr;
+grid-template-areas:
+"article1 article2"
+"article3 article3";
+grid-area: articles;
+margin: 10px;
+padding: 10px;
 }
 section.article1 {
-    background-color: green;
-    grid-area: article1;
-    border-radius: 15px;
-    margin: 15px;
+background-color: gray;
+grid-area: article1;
+border-radius: 15px;
+margin: 10px;
+padding: 10px;
 }
 div.artcile1Part1 {
-    background-color: darkolivegreen;
-    display: flex;
+background-color: lightgray;
+display: flex;
 }
 div.cardImgB3 {
-    background-color: pink;
+background-color: pink;
 }
 div.cardImgB3 img {
-    height: 100px;
-    object-fit: cover;
+height: 100px;
+object-fit: cover;
 }
 div.cardTextB3 {
-    background-color: darkslateblue;
+background-color: beige ;
+}
+div.starEvaluation {
+display: flex;
+}
+div.starFullIcon {
+display: flex;
+height: 10px;
+width: 10px;
+color: #0065FC;
+margin-right: 10px;
+}
+div.startEmptyIcon {
+display: flex;
+color: pink;
+margin-right: 10px;
 }
 div.artcile1Part2 {
-    background-color: darkseagreen;
-    display: flex;
+background-color: darkseagreen;
+display: flex;
 }
 aside.article2 {
-    background-color: indianred;
-    grid-area: article2;
-    border-radius: 15px;
-    margin: 15px;
+background-color: indianred;
+grid-area: article2;
+border-radius: 15px;
+margin: 15px;
+padding: 5px;
 }
 div.artcile2Title {
-    background-color: darksalmon;
-    display: flex;
-    justify-content: space-evenly;
+background-color: darksalmon;
+display: flex;
+justify-content: space-evenly;
+padding: 3px;
 }
 div.cardsWithIcon {
-    background-color: blue;
-    display: flex;
-    justify-content: center;
-    margin: 8px;
+background-color: blue;
+display: flex;
+justify-content: center;
+margin: 8px;
+padding: 8px;
+border-radius: 20px;
 }
 div.cardDescripIcon {
-    background-color: coral;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+background-color: coral;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+padding: 3px;
+border-radius: 10px;
 }
 section.article3 {
-    background-color: darkslateblue;
-    grid-area: article3;
+background-color: darkslateblue;
+grid-area: article3;
 }
 div.article3cards {
-    background-color: black;
-    display: flex;
-    justify-content: space-around;
+background-color: black;
+display: flex;
+justify-content: space-around;
 }
 
 div.artcile3Part1 {
-    display: flex;
+display: flex;
 }
 div.artcile3Part2 {
-    display: flex;
+display: flex;
 }
 div.artcile3Relou {
-    background-color: wheat;
+background-color: wheat;
 }
 div.cards {
-    background-color: white;
-    margin: 8px;
+background-color: white;
+margin: 8px;
+padding: 5px;
+border-radius: 10px;
 }
-
 div.cardImgB5 {
-    background-color: darkslategray;
+background-color: darkslategray;
 }
 div.cardTextB5 {
-    background-color: darkslateblue;
+background-color: darkslateblue;
 }
 footer.basDePage {
-    background-color: gray;
-    grid-area: basDePage;
-    display: flex;
-    
+background-color: gray;
+grid-area: basDePage;
+display: flex;
+
 }
 div.footInfo {
-    background-color: lightpink;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+background-color: lightpink;
+display: flex;
+flex-direction: column;
+flex: 1;
 }
 /*Format tablette*/
 @media screen and (max-width: 992px) and (min-width: 769px) {
-    
-    header.navBar {
-        background-color: lightpink;
-    }
-    div.article3cards {
-        flex-direction: column;
-        justify-content: center;
-    }
-    div.artcile3Part1 {
-        justify-content: center;
-        margin: 10px;
-    }
-    div.artcile3Part2 {
-        justify-content: center;
-        margin: 10px;
-    }
+
+header.navBar {
+background-color: lightpink;
+}
+div.article3cards {
+flex-direction: column;
+justify-content: center;
+}
+div.artcile3Part1 {
+justify-content: center;
+margin: 10px;
+}
+div.artcile3Part2 {
+justify-content: center;
+margin: 10px;
+}
 }
 /*Format mobile*/
-@media screen and (max-width: 768px)  {
-    article#container3 {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas: 
-        "article2"
-        "article1"
-        "article3";
-    }
-    div.navBar {
-        background-color: #DEEBFF;
-    }
-    div.headContainer {
-        background-color: aquamarine;
-        flex-direction: column;
-    }
-    div.logo {
-        background-color: darkorchid;
-        justify-content: center;
-        height: 150px;
-        /*background-image: url("../images/logo/Booki@3x.png");*/
-    }
-    div.hebergementBar {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: row;
-    }
-    div.hebergementBar a {
-        border-top: none;
-        border-bottom: 3px solid transparent;
-        padding-bottom: 20px;
-    }
-    div.hebergementBar a:hover {
-        border-top: none;
-        border-bottom: 3px solid blue;
-    }
-    div.hybrid {
-        display: none;
-    }
-    div.filters { 
-        align-items: none;
-        background-color: #DEEBFF;
-        display: flex;
-        flex-direction: column;
-        align-items: unset;
-        justify-content: unset;
-        align-items: unset;
-    }
-    div.rechercheBar { 
-        display: none;
-    }
-    div.rechercheBarMobile {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        padding: 10px;
-    }
-    div.buttonMagnifyingGlass {
-        width: 10%;
-        height: 50px;
-        background-color: #0065FC;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        border-radius: 10px;
-    }
-    input.searchBarMobile{
-        width: 70%;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: none;
-        padding: 20px;
-        border-top:  0.5px solid lightslategray;
-        border-bottom: 0.5px solid lightslategray;
-    }
-    div.buttonMagnifyingGlass:hover {
-        height: 50px;
-        background-color: lightskyblue;
-        color: white;
-        border-radius: 10px;
-       
-    }
-    div.filterRelou {
-        justify-content: unset;
-    }
-    div.filter {
-        justify-content: unset;
-        /*margin: auto;*/
-    }
-    section.article1 {
-        border-radius: 0px;
-        margin: 0px;
-    }
-    div.artcile1Part1 {
-        flex-direction: column;
-    }
-    div.artcile1Part2 {
-        flex-direction: column;
-    }
-    aside.article2 {
-        border-radius: 0px;
-        margin: 0px;
-    }
-    div.cardsWithIcon {
-        flex-direction: column;
-    }
-    div.article3cards {
-        flex-direction: column;
-    }
-    div.artcile3Part1 {
-        flex-direction: column;
-    }
-    div.artcile3Part2 {
-        flex-direction: column;
-    }
-    footer.basDePage {
-        flex-direction: column;
-        flex: 1;
-    }
-    div.footInfo {
-        margin: 20px;
-    }
+@media screen and (max-width: 768px) {
+article#container3 {
+grid-template-columns: 1fr;
+grid-template-rows: repeat(3, 1fr);
+grid-template-areas:
+"article2"
+"article1"
+"article3";
+}
+div.navBar {
+background-color: #DEEBFF;
+}
+div.headContainer {
+background-color: aquamarine;
+flex-direction: column;
+}
+div.logo {
+background-color: darkorchid;
+justify-content: center;
+height: 150px;
+/*background-image: url("../images/logo/Booki@3x.png");*/
+}
+div.hebergementBar {
+display: flex;
+justify-content: space-evenly;
+flex-direction: row;
+}
+div.hebergementBar a {
+border-top: none;
+border-bottom: 3px solid transparent;
+padding-bottom: 20px;
+}
+div.hebergementBar a:hover {
+border-top: none;
+border-bottom: 3px solid blue;
+}
+div.hybrid {
+display: none;
+}
+div.filters {
+align-items: none;
+background-color: #DEEBFF;
+display: flex;
+flex-direction: column;
+align-items: unset;
+justify-content: unset;
+align-items: unset;
+}
+div.rechercheBar {
+display: none;
+}
+div.rechercheBarMobile {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+padding: 10px;
+}
+div.buttonMagnifyingGlass {
+width: 10%;
+height: 50px;
+background-color: #0065FC;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+border-radius: 10px;
+}
+input.searchBarMobile{
+width: 70%;
+height: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+border: none;
+padding: 20px;
+border-top: 0.5px solid lightslategray;
+border-bottom: 0.5px solid lightslategray;
+}
+div.buttonMagnifyingGlass:hover {
+height: 50px;
+background-color: lightskyblue;
+color: white;
+border-radius: 10px;
+
+}
+div.filterRelou {
+justify-content: unset;
+}
+div.filter {
+justify-content: unset;
+/*margin: auto;*/
+}
+section.article1 {
+border-radius: 0px;
+margin: 0px;
+}
+div.artcile1Part1 {
+flex-direction: column;
+}
+div.artcile1Part2 {
+flex-direction: column;
+}
+aside.article2 {
+border-radius: 0px;
+margin: 0px;
+}
+div.cardsWithIcon {
+flex-direction: column;
+}
+div.article3cards {
+flex-direction: column;
+}
+div.artcile3Part1 {
+flex-direction: column;
+}
+div.artcile3Part2 {
+flex-direction: column;
+}
+footer.basDePage {
+flex-direction: column;
+flex: 1;
+}
+div.footInfo {
+margin: 20px;
+}
 }
