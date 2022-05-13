@@ -288,6 +288,42 @@ margin: 8px;
 padding: 5px;
 border-radius: 10px;
 }
+img.hebergementImg1 {
+    object-fit: cover;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
+img.hebergementImg2 {
+    object-fit: cover;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
+img.hebergementImg3 {
+    object-fit: cover;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
+img.hebergementImg4 {
+    object-fit: cover;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
+img.hebergementImg5 {
+    object-fit: cover;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
+img.hebergementImg6 {
+    object-fit: cover;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
 div.cardImgB5 {
 background-color: darkslategray;
 }
