@@ -247,6 +247,12 @@ display: flex;
 justify-content: space-evenly;
 padding: 3px;
 }
+div.populaireImg6 {
+    object-fit: cover;
+    width: 35%;
+    height: 160px;
+    border-radius: 15px 0 0 15px ;
+}
 div.cardsWithIcon {
 background-color: blue;
 display: flex;
@@ -318,11 +324,23 @@ img.hebergementImg5 {
     height: 120px;
     border-radius: 15px 15px 0 0;
 }
-img.hebergementImg6 {
+img.populaireImg1 {
     object-fit: cover;
     width: 100%;
     height: 120px;
-    border-radius: 15px 15px 0 0;
+    border-radius: 15px 0 0 15px ;
+}
+img.populaireImg2 {
+    object-fit: cover;
+    width: 55%;
+    height: 130px;
+    border-radius: 15px 0 0 15px ;
+}
+img.populaireImg3 {
+    object-fit: cover;
+    width: 55%;
+    height: 120px;
+    border-radius: 15px 0 0 15px ;
 }
 div.cardImgB5 {
 background-color: darkslategray;
