@@ -138,6 +138,7 @@ border-radius: 10px;
 div.filters {
 background-color: #F2F2F2;
 display: flex;
+align-items: center;
 }
 div.filterRelou {
     display: flex;
@@ -191,7 +192,6 @@ margin-right: 5px;
 article#container3 {
 background-color: lightgreen;
 display: grid;
-grid-template-columns: 2fr 1fr;
 /*grid-template-rows: 1fr 1fr;*/
 grid-template-rows: 0.2fr 0.5fr;
 grid-template-areas:
@@ -331,6 +331,12 @@ img.hebergementImg5 {
     height: 120px;
     border-radius: 15px 15px 0 0;
 }
+img.hebergementImg6 {
+    object-fit: cover;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
 img.populaireImg1 {
     object-fit: cover;
     width: 100%;
@@ -431,7 +437,7 @@ flex: 1;
     article#container3 {
         grid-template-columns: 1fr;
         /*grid-template-rows: repeat(3, 1fr);*/
-        grid-template-rows: repeat(3, 6fr);
+        grid-template-rows: repeat(3, 0.5fr);
         grid-template-areas:
         "article2"
         "article1"
@@ -465,6 +471,10 @@ flex: 1;
         border-top: none;
         border-bottom: 3px solid blue;
     }
+    main#container2 {
+        background-color: brown;
+        grid-template-rows: 0.1fr ;
+     }
     div.hybrid {
         display: none;
     }
