@@ -144,9 +144,10 @@ div.filterRelou {
     display: flex;
 }
 div.filter {
-    background-color: hotpink;
+    background-color: gold;
     border: 2px solid lightgrey;
     align-items: center;
+    justify-content: center;
     margin: 10px;
     border-radius: 20px;
 }
@@ -450,11 +451,12 @@ flex: 1;
     }
     div.hebergementBar {
         display: flex;
-        justify-content: space-evenly;
-        flex-direction: row;
+        justify-content: space-evenly; 
     }
     div.hebergementBar a {
         border-top: none;
+        text-align: center;        
+        width: 100%;
         border-bottom: 3px solid transparent;
         padding-bottom: 20px;
     }
@@ -465,12 +467,7 @@ flex: 1;
     div.hybrid {
         display: none;
     }
-    div.filters {
-        align-items: none;
-        background-color: #DEEBFF;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
+    
     div.rechercheBar {
         display: none;
     }
@@ -508,11 +505,18 @@ flex: 1;
         color: white;
         border-radius: 10px;
     }
+    div.filters {
+        align-items: none;
+        background-color: #DEEBFF;
+        flex-direction: column;
+        justify-content: center;
+       align-items: flex-start;
+    }
     div.filterRelou {
-        justify-content: unset;
+        justify-content: center;
     }
     div.filter {
-        justify-content: unset;
+        justify-content: center;
     /*margin: auto;*/
     }
     section.article1 {
