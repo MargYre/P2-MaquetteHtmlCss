@@ -28,7 +28,8 @@ div#container1 {
 background-color: #F2F2F2;
 display: grid;
 grid-template-columns: 1fr;
-grid-template-rows: 0.2fr 6fr 1fr;
+/*grid-template-rows: 0.2fr 6fr 1fr;*/
+grid-template-rows: 0.2fr 2fr 0.2fr;
 grid-template-areas:
 "navBar"
 "main"
@@ -78,7 +79,8 @@ main#container2 {
 background-color: purple;
 display: grid;
 grid-template-columns: 1fr;
-grid-template-rows: 0.5fr 3fr;
+/*grid-template-rows: 0.5fr 3fr;*/
+grid-template-rows: 0.1fr 2fr 0.1fr;
 grid-template-areas:
 "section"
 "articles";
@@ -139,32 +141,34 @@ display: flex;
 align-items: center;
 }
 div.filterRelou {
-display: flex;
+    display: flex;
 }
 div.filter {
-background-color: #F2F2F2;
-display: flex;
-border: 2px solid lightgrey;
-justify-content: center;
-align-items: center;
-margin: 10px;
-border-radius: 20px;
+    background-color: hotpink;
+    border: 2px solid lightgrey;
+    align-items: center;
+    margin: 10px;
+    border-radius: 20px;
 }
-div.filterIcon {
-display: flex;
-align-items: center;
-justify-content: center;
-border-radius: 25px;
-height: 40px;
-width: 40px;
-background-color: lightskyblue;
-color: #0065FC;
-margin-left: -3px;
-margin-top: -2px;
-margin-bottom: -2px;
+div.filter i {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    height: 40px;
+    width: 40px;
+    background-color: lightskyblue;
+    color: #0065FC;
+    margin-left: -3px;
+    margin-top: -2px;
+    margin-bottom: -2px;
 }
-div.filterIcon:hover {
-color: white;
+div.filter a {
+    text-decoration: none;
+}
+div.filter a:hover {
+    background-color: #F2F2F2;
 }
 div.headInformation {
 background-color: #F2F2F2;
@@ -186,7 +190,8 @@ article#container3 {
 background-color: lightgreen;
 display: grid;
 grid-template-columns: 2fr 1fr;
-grid-template-rows: 1fr 1fr;
+/*grid-template-rows: 1fr 1fr;*/
+grid-template-rows: 0.2fr 0.5fr;
 grid-template-areas:
 "article1 article2"
 "article3 article3";
@@ -342,17 +347,55 @@ img.populaireImg3 {
     height: 120px;
     border-radius: 15px 0 0 15px ;
 }
+div.cards {
+    background-color: darkslategrey;
+}
+img.activiteImg1 {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+}
 div.cardImgB5 {
 background-color: darkslategray;
 }
+img.activiteImg2 {
+    object-fit: cover;
+    width: 100%;
+    height: 100px;
+    border-radius: 15px 15px 0 0;
+}
+img.activiteImg3 {
+    object-fit: cover;
+    width: 100%;
+    height: 100px;
+    border-radius: 15px 15px 0 0;
+}
+img.activiteImg4 {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+}
+img.activiteImg5 {
+    object-fit: cover;
+    width: 100%;
+    height: 100px;
+    border-radius: 15px 15px 0 0;
+}
+img.activiteImg6 {
+    object-fit: cover;
+    width: 100%;
+    height: 100px;
+    border-radius: 15px 15px 0 0;
+}
 div.cardTextB5 {
-background-color: darkslateblue;
+background-color: hotpink;
 }
 footer.basDePage {
 background-color: gray;
 grid-area: basDePage;
 display: flex;
-
 }
 div.footInfo {
 background-color: lightpink;
@@ -362,148 +405,147 @@ flex: 1;
 }
 /*Format tablette*/
 @media screen and (max-width: 992px) and (min-width: 769px) {
+        header.navBar {
+            background-color: lightpink;
+        }
 
-header.navBar {
-background-color: lightpink;
-}
-div.article3cards {
-flex-direction: column;
-justify-content: center;
-}
-div.artcile3Part1 {
-justify-content: center;
-margin: 10px;
-}
-div.artcile3Part2 {
-justify-content: center;
-margin: 10px;
-}
-}
-/*Format mobile*/
-@media screen and (max-width: 768px) {
-article#container3 {
-grid-template-columns: 1fr;
-grid-template-rows: repeat(3, 1fr);
-grid-template-areas:
-"article2"
-"article1"
-"article3";
-}
-div.navBar {
-background-color: #DEEBFF;
-}
-div.headContainer {
-background-color: aquamarine;
-flex-direction: column;
-}
-div.logo {
-background-color: darkorchid;
-justify-content: center;
-height: 150px;
-/*background-image: url("../images/logo/Booki@3x.png");*/
-}
-div.hebergementBar {
-display: flex;
-justify-content: space-evenly;
-flex-direction: row;
-}
-div.hebergementBar a {
-border-top: none;
-border-bottom: 3px solid transparent;
-padding-bottom: 20px;
-}
-div.hebergementBar a:hover {
-border-top: none;
-border-bottom: 3px solid blue;
-}
-div.hybrid {
-display: none;
-}
-div.filters {
-align-items: none;
-background-color: #DEEBFF;
-display: flex;
-flex-direction: column;
-align-items: unset;
-justify-content: unset;
-align-items: unset;
-}
-div.rechercheBar {
-display: none;
-}
-div.rechercheBarMobile {
-display: flex;
-align-items: center;
-justify-content: center;
-width: 100%;
-padding: 10px;
-}
-div.buttonMagnifyingGlass {
-width: 10%;
-height: 50px;
-background-color: #0065FC;
-display: flex;
-align-items: center;
-justify-content: center;
-cursor: pointer;
-border-radius: 10px;
-}
-input.searchBarMobile{
-width: 70%;
-height: 50px;
-display: flex;
-align-items: center;
-justify-content: center;
-border: none;
-padding: 20px;
-border-top: 0.5px solid lightslategray;
-border-bottom: 0.5px solid lightslategray;
-}
-div.buttonMagnifyingGlass:hover {
-height: 50px;
-background-color: lightskyblue;
-color: white;
-border-radius: 10px;
+        div.article3cards {
+            flex-direction: column;
+            justify-content: center;
+        }
 
-}
-div.filterRelou {
-justify-content: unset;
-}
-div.filter {
-justify-content: unset;
-/*margin: auto;*/
-}
-section.article1 {
-border-radius: 0px;
-margin: 0px;
-}
-div.artcile1Part1 {
-flex-direction: column;
-}
-div.artcile1Part2 {
-flex-direction: column;
-}
-aside.article2 {
-border-radius: 0px;
-margin: 0px;
-}
-div.cardsWithIcon {
-flex-direction: column;
-}
-div.article3cards {
-flex-direction: column;
-}
-div.artcile3Part1 {
-flex-direction: column;
-}
-div.artcile3Part2 {
-flex-direction: column;
-}
-footer.basDePage {
-flex-direction: column;
-flex: 1;
-}
-div.footInfo {
-margin: 20px;
-}
+        div.artcile3Part1 {
+            justify-content: center;
+            margin: 10px;
+        }
+        
+        div.artcile3Part2 {
+            justify-content: center;
+            margin: 10px;
+        }
+} /*Erreur braquette*/
+    /*Format mobile*/
+    @media screen and (max-width: 768px) {
+    article#container3 {
+        grid-template-columns: 1fr;
+        /*grid-template-rows: repeat(3, 1fr);*/
+        grid-template-rows: repeat(3, 6fr);
+        grid-template-areas:
+        "article2"
+        "article1"
+        "article3";
+    }
+    div.navBar {
+        background-color: #DEEBFF;
+    }
+    div.headContainer {
+        background-color: aquamarine;
+        flex-direction: column;
+    }
+    div.logo {
+        background-color: darkorchid;
+        justify-content: center;
+        height: 150px;
+        /*background-image: url("../images/logo/Booki@3x.png");*/
+    }
+    div.hebergementBar {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    div.hebergementBar a {
+        border-top: none;
+        border-bottom: 3px solid transparent;
+        padding-bottom: 20px;
+    }
+    div.hebergementBar a:hover {
+        border-top: none;
+        border-bottom: 3px solid blue;
+    }
+    div.hybrid {
+        display: none;
+    }
+    div.filters {
+        align-items: none;
+        background-color: #DEEBFF;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    div.rechercheBar {
+        display: none;
+    }
+    div.rechercheBarMobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 10px;
+    }
+    div.buttonMagnifyingGlass {
+        width: 10%;
+        height: 50px;
+        background-color: #0065FC;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    input.searchBarMobile{
+        width: 70%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        padding: 20px;
+        border-top: 0.5px solid lightslategray;
+        border-bottom: 0.5px solid lightslategray;
+    }
+    div.buttonMagnifyingGlass:hover {
+        height: 50px;
+        background-color: lightskyblue;
+        color: white;
+        border-radius: 10px;
+    }
+    div.filterRelou {
+        justify-content: unset;
+    }
+    div.filter {
+        justify-content: unset;
+    /*margin: auto;*/
+    }
+    section.article1 {
+        border-radius: 0px;
+        margin: 0px;
+    }
+    div.artcile1Part1 {
+        flex-direction: column;
+    }
+    div.artcile1Part2 {
+        flex-direction: column;
+    }
+    aside.article2 {
+        border-radius: 0px;
+        margin: 0px;
+    }
+    div.cardsWithIcon {
+        flex-direction: column;
+    }
+    div.article3cards {
+        flex-direction: column;
+    }
+    div.artcile3Part1 {
+        flex-direction: column;
+    }
+    div.artcile3Part2 {
+        flex-direction: column;
+    }
+    footer.basDePage {
+        flex-direction: column;
+        flex: 1;
+    }
+    div.footInfo {
+        margin: 20px;
+    }
 }
