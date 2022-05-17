@@ -87,16 +87,16 @@ grid-template-areas:
 grid-area: main;
 }
 section#filtersContainer {
-background-color: #F2F2F2;
-grid-area: section;
+    background-color: #F2F2F2;
+    grid-area: section;
 }
 div.rechercheBar {
-background-color: #F2F2F2;
-display: flex;
-padding: 10px;
+    background-color: #F2F2F2;
+    display: flex;
+    padding: 10px;
 }
 div.rechercheBarMobile {
-display: none;
+    display: none;
 }
 div.buttonLocalisationIcon {
 background-color: lightgrey;
@@ -138,12 +138,14 @@ border-radius: 10px;
 div.filters {
 background-color: #F2F2F2;
 display: flex;
-align-items: center;
 }
 div.filterRelou {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 div.filter {
+    display: flex;
     background-color: gold;
     border: 2px solid lightgrey;
     align-items: center;
@@ -153,7 +155,6 @@ div.filter {
 }
 div.filter i {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     border-radius: 25px;
@@ -506,11 +507,11 @@ flex: 1;
         border-radius: 10px;
     }
     div.filters {
-        align-items: none;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
         background-color: #DEEBFF;
         flex-direction: column;
-        justify-content: center;
-       align-items: flex-start;
     }
     div.filterRelou {
         justify-content: center;
