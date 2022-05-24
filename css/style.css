@@ -149,7 +149,7 @@ div.filterRelou {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px;
+    
 }
 div.filterRelou a {
     filter:drop-shadow(0px 0px 1px gray);
@@ -164,8 +164,7 @@ div.filter {
     border: 2px solid lightgrey;
     align-items: center;
     justify-content: center;
-    margin: 5px;
-    padding-right: 7px;
+    margin: 10px;
     border-radius: 20px;
 }
 div.filter i {
@@ -223,6 +222,23 @@ div.artcile1Part1 {
     background-color: red;
     display: flex;
 }
+/*CARDS start*/
+div.cards {
+    background-color: hotpink;
+    margin: 8px;
+    padding: 5px;
+    border-radius: 10px;
+    width: 30%;
+    height: 200px;
+}
+img.cardImgB3 {
+    border-radius: 15px 15px 0 0;
+}
+div.cardImgB3 img {
+    width: 100%;
+    height: 100px;
+    /*object-fit: cover;*/
+}
 div.artcile1Part1 h4{
     text-size-adjust: 20px;
     font-size: 12px;
@@ -249,6 +265,10 @@ div.artcile1Part2 {
     background-color: darkseagreen;
     display: flex;
 }
+div.artcile1Part2 h4{
+    text-size-adjust: 20px;
+    font-size: 12px;
+}
 aside.article2 {
     background-color: indianred;
     grid-area: article2;
@@ -261,20 +281,37 @@ div.artcile2Title {
     display: flex;
     justify-content: space-evenly;
     padding: 3px;
-}
-div.populaireImg6 {
     object-fit: cover;
-    width: 35%;
-    height: 160px;
-    border-radius: 15px 0 0 15px ;
 }
-
+div.cardsWithIcon {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+div.cardsWithIcon img{
+    width: 8em;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+div.cardDescripIcon {
+    background-color: coral;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 3px;
+    border-radius: 10px;
+}
 section.article3 {
 background-color: darkslateblue;
 grid-area: article3;
 }
 div.article3cards {
-background-color: black;
+background-color: lightgoldenrodyellow;
 display: flex;
 justify-content: space-around;
 }
@@ -287,48 +324,8 @@ display: flex;
 div.artcile3Relou {
 background-color: wheat;
 }
-/*CARDS start*/
-div.cards {
-    background-color: white;
-    margin: 8px;
-    padding: 5px;
-    border-radius: 10px;
-    background-color: hotpink;
-}
-/*img.cardImgB3 {
-    object-fit: cover;
-    width: 150%;
-    border-radius: 15px 15px 0 0;
-}*/
-div.cardImgB3 img {
-    width: 80%;
-    height: 100px;
-    object-fit: cover;
-}
-/*
-img.hebergementImg1 {
-    object-fit: cover;
-    width: 100%;
-    height: 120px;
-    border-radius: 15px 15px 0 0;
-}*/
-div.cardsWithIcon {
-background-color: blue;
-display: flex;
-justify-content: center;
-margin: 8px;
-padding: 8px;
-border-radius: 20px;
-}
-div.cardDescripIcon {
-background-color: coral;
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-padding: 3px;
-border-radius: 10px;
-}
-img.populaireImg1 {
+
+/*img.populaireImg1 {
     object-fit: cover;
     width: 100%;
     height: 120px;
@@ -345,7 +342,7 @@ img.populaireImg3 {
     width: 55%;
     height: 120px;
     border-radius: 15px 0 0 15px ;
-}
+}*/
 img.activiteImg1 {
     object-fit: cover;
     width: 100%;
@@ -386,7 +383,7 @@ img.activiteImg6 {
     border-radius: 15px 15px 0 0;
 }
 div.cardTextB5 {
-background-color: hotpink;
+    background-color: hotpink;
 }
 footer.basDePage {
     background-color: gray;
@@ -528,8 +525,7 @@ flex: 1;
     /*margin: auto;*/
     }
     section.article1 {
-        border-radius: 0px;
-        margin: 0px;
+        object-fit: cover;
     }
     div.artcile1Part1 {
         flex-direction: column;
@@ -537,12 +533,25 @@ flex: 1;
     div.artcile1Part2 {
         flex-direction: column;
     }
+    div.cards {
+        width: unset;
+        object-fit: cover;
+    }
+    div.cardImgB3 img {
+        object-fit: cover;
+    }
     aside.article2 {
         border-radius: 0px;
         margin: 0px;
     }
     div.cardsWithIcon {
-        flex-direction: column;
+        width: unset;
+    }
+    div.cardsWithIcon img{
+        width: 30%;
+    }
+    div.cardDescripIcon{
+        width: 70%;
     }
     div.article3cards {
         flex-direction: column;
