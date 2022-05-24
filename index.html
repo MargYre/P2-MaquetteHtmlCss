@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Web app</title>
+        <title>mon site de réservation Booki</title>
         <!-- file normalize -->
         <link rel="stylesheet" href="./css/normalize.css"/>
+        <!-- style -->
         <link rel="stylesheet" href="./css/style.css"/>
+         <!-- cdn: fontawsome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="icon" href="Google__Logo.ico"/>
     </head>
@@ -15,12 +17,12 @@
             <header class="navBar">
                 <div class="headContainer"> 
                     <div class="logo">
-                        <a href="#"><img src="./images/logo/Booki.png" alt="Logo booki"></a>
+                        <a id="logo" href="#logo"><img src="./images/logo/Booki.png" alt="Logo booki"></a>
                     </div>
                     <div class="hybrid"></div>
                     <div class="hebergementBar">
-                            <a href="#">Hebergment</a>
-                            <a href="#">Activités</a>
+                            <a href="#linkToArticle1">Hebergment</a>
+                            <a href="#article3">Activités</a>
                     </div>
                 </div>
             </header>
@@ -77,8 +79,9 @@
                         <p>Plus de 500 logements sont disponible dans cette ville</p>
                     </div>
                 </section>
-                <article id="container3">
+                <div id="container3">
                     <section class="article1">
+                        <a id="linkToArticle1" href="#"></a>
                         <h2>Hébergement à Marseille</h2>
                         <div class="artcile1Part1">
                             <!--Cards start-->
@@ -105,7 +108,7 @@
                                     <img src="./images/hebergements/4_small/Hôtelduport.jpg" alt="Image Hôtel du port">
                                 </div>
                                 <div class="cardTextB3">
-                                    <h4>Hôtel du port</h1>
+                                    <h4>Hôtel du port</h4>
                                     <p>Nuit à partir de 2$</p>
                                     <div class="starEvaluation">
                                         <div class="starFullIcon"><i class="fa-solid fa-star"></i></div>
@@ -121,7 +124,7 @@
                                     <img src="./images/hebergements/4_small/HôtelLesmouettes.jpg" alt="Image Hôtel Les mouettes">
                                 </div>
                                 <div class="cardTextB3">
-                                    <h4>Hôtel Les mouettes</h1>
+                                    <h4>Hôtel Les mouettes</h4>
                                     <p>Nuit à partir de 76$</p>
                                     <div class="starEvaluation">
                                         <div class="starFullIcon"><i class="fa-solid fa-star"></i></div>
@@ -141,7 +144,7 @@
                                         <img src="./images/hebergements/4_small/Hôteldelamer.jpg" alt="Image Hôtel de la mer">
                                     </div>
                                     <div class="cardTextB3">
-                                        <h4>Hôtel de la mer</h1>
+                                        <h4>Hôtel de la mer</h4>
                                         <p>Nuit à partir de 25$</p>
                                         <div class="starEvaluation">
                                             <div class="starFullIcon"><i class="fa-solid fa-star"></i></div>
@@ -159,7 +162,7 @@
                                         <img src="./images/hebergements/4_small/AubergeLePanier.jpg" alt="Image Auberge Le Panier">
                                     </div>
                                     <div class="cardTextB3">
-                                        <h4>Auberge Le Panier</h1>
+                                        <h4>Auberge Le Panier</h4>
                                         <p>Nuit à partir de 2$</p>
                                         <div class="starEvaluation">
                                             <div class="starFullIcon"><i class="fa-solid fa-star"></i></div>
@@ -177,7 +180,7 @@
                                         <img class="hebergementImg6" src="./images/hebergements/4_small/HôtelchezAmina.jpg" alt="Image Hôtel chez Amina">
                                     </div>
                                     <div class="cardTextB3">
-                                        <h4>Hôtel chez Amina</h1>
+                                        <h4>Hôtel chez Amina</h4>
                                         <p>Nuit à partir de 76$</p>
                                         <div class="starEvaluation">
                                             <div class="starFullIcon"><i class="fa-solid fa-star"></i></div>
@@ -197,12 +200,14 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <div class="cardsWithIcon">
-                                <img src="./images/hebergements/4_small/HôtelLesoleildumatin.jpg" alt="Image Hôtel Tout bleu et Blanc">
+                            <div class="article2Img">
+                                    <img src="./images/hebergements/4_small/HôtelLesoleildumatin.jpg" alt="Image Hôtel Tout bleu et Blanc">
+                                    </div>
                                 <div class="cardDescripIcon">
                                 <h3>Hôtel Le soleil du matin</h3>
                                 <p>Nuit à partir de 128$</p>
                                 <div class="starEvaluation">
-                                    <div class="starFullIcon"><i class="fa-solid fa-star"></i></div>
+                                    <i class="fa-solid fa-star starFullIcon"></i>
                                     <div class="starFullIcon"><i class="fa-solid fa-star"></i></div>
                                     <div class="starFullIcon"><i class="fa-solid fa-star"></i></div>
                                     <div class="starFullIcon"><i class="fa-solid fa-star"></i></div>
@@ -220,9 +225,7 @@
                                     <div class="starFullIcon"><i class="fa-solid fa-star"></i></div>
                                     <div class="starFullIcon"><i class="fa-solid fa-star"></i></div>
                                     <div class="starFullIcon"><i class="fa-solid fa-star"></i></div>
-                                    <div class="startEmptyIcon">
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
+                                    <i class="fa-solid fa-star starFullIconGrey"></i>
                                 </div>
                             </div>
                         </div>
@@ -243,46 +246,46 @@
                             </div>
                         </div>
                     </aside>
-                    <section class="article3">
+                    <section id="article3">
                         <h2>Activités à Marseille</h2>
                         <div class="article3cards">
                             <div class="artcile3Part1">
-                                <div class="cards3">
-                                    <img class="activiteImg1" src="./images/activites/4_small/vieuxPort.jpg" alt="Image vieux port">
+                                <div class="cards3Solo">
+                                    <img src="./images/activites/4_small/vieuxPort.jpg" alt="Image vieux port">
                                     <p>vieux Port</p>
                                 </div>
                                 <div class="artcile3Relou">
                                     <div class="cards3">
                                         <div class="cardImgB5">
-                                            <img class="activiteImg2" src="./images/activites/4_small/PortdePomègues.jpg" alt="Image Port de Pomègues">
+                                            <img src="./images/activites/4_small/PortdePomègues.jpg" alt="Image Port de Pomègues">
                                         </div>
                                         <div class="cardTextB5"><p>Port de Pomègues</p></div>
                                     </div>
                                     <div class="cards3">
-                                        <img class="activiteImg3" src="./images/activites/4_small/IlesduFrioul.jpg" alt="Image Iles du Frioul">
+                                        <img src="./images/activites/4_small/IlesduFrioul.jpg" alt="Image Iles du Frioul">
                                         <p>Iles du Frioul</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="artcile3Part2">
-                                <div class="cards3">
-                                    <img class="activiteImg4" src="./images/activites/4_small/ParcNationaldesCalanques.jpg" alt="Image Parc National des Calanques">
+                                <div class="cards3Solo">
+                                    <img src="./images/activites/4_small/ParcNationaldesCalanques.jpg" alt="Image Parc National des Calanques">
                                     <p>Parc National des Calanques</p>
                                 </div>
                                 <div class="artcile3Relou">
                                     <div class="cards3">
-                                        <img class="activiteImg5" src="./images/activites/4_small/NotreDamedelagarde.jpg" alt="Image Notre Dame de la garde">
+                                        <img src="./images/activites/4_small/NotreDamedelagarde.jpg" alt="Image Notre Dame de la garde">
                                         <p>Notre Dame de la garde</p>
                                     </div>
                                     <div class="cards3">
-                                        <img class="activiteImg6" src="./images/activites/4_small/ParcLongchap.jpg" alt="Image Parc Longchap">
+                                        <img src="./images/activites/4_small/ParcLongchap.jpg" alt="Image Parc Longchap">
                                         <p>Parc Longchap</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
-                </article>
+                </div>
             </main>
             <footer class="basDePage">
                 <div class="footInfo">

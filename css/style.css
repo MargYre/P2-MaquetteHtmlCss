@@ -165,6 +165,7 @@ div.filter {
     align-items: center;
     justify-content: center;
     margin: 10px;
+    padding-right: 10px;
     border-radius: 20px;
 }
 div.filter i {
@@ -199,11 +200,12 @@ div.infomationIcon {
     border-radius: 25px;
     margin-right: 5px;
 }
-article#container3 {
+
+div#container3 {
     background-color: lightgreen;
     display: grid;
-    /*grid-template-rows: 1fr 1fr;
-    grid-template-rows: 0.2fr 5fr;*/
+    grid-template-rows: 0.5fr 0.8fr;
+    /*grid-template-rows: 0.2fr 5fr;*/
     grid-template-areas:
     "article1 article2"
     "article3 article3";
@@ -211,6 +213,7 @@ article#container3 {
     margin: 10px;
     padding: 10px;
 }
+
 section.article1 {
     background-color: blueviolet;
     grid-area: article1;
@@ -239,9 +242,11 @@ div.cardImgB3 img {
     height: 100px;
     /*object-fit: cover;*/
 }
-div.artcile1Part1 h4{
-    text-size-adjust: 20px;
+div.artcile1Part1 h4 {
     font-size: 12px;
+}
+div.artcile1Part1 p {
+    font-size: 10px;
 }
 div.cardTextB3 {
     background-color: beige ;
@@ -256,18 +261,27 @@ div.starFullIcon {
     color: #0065FC;
     margin-right: 10px;
 }
+i.starFullIcon {
+    color: #0065FC;
+}
+i.starFullIconGrey {
+    color: grey;
+}
 div.startEmptyIcon {
     display: flex;
-    color: pink;
+    color: gray;
     margin-right: 10px;
+    font-size: 10px;
 }
 div.artcile1Part2 {
     background-color: darkseagreen;
     display: flex;
 }
-div.artcile1Part2 h4{
-    text-size-adjust: 20px;
+div.artcile1Part2 h4 {
     font-size: 12px;
+}
+div.artcile1Part2 p {
+    font-size: 10px;
 }
 aside.article2 {
     background-color: indianred;
@@ -279,21 +293,32 @@ aside.article2 {
 div.artcile2Title {
     background-color: darksalmon;
     display: flex;
-    justify-content: space-evenly;
     padding: 3px;
-    object-fit: cover;
+}
+div.artcile2Title h2 {
+    margin-left: 5px;
+}
+div.artcile2Title i {
+    margin-left: 200px;
 }
 div.cardsWithIcon {
     background-color: blue;
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     margin: 8px;
     padding: 8px;
     border-radius: 20px;
     object-fit: cover;
 }
+div.article2Img {
+    width: 100%;
+    height: 150px;
+    min-width: 100px;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
 div.cardsWithIcon img{
-    width: 8em;
+    width: 100%;
     height: 150px;
     object-fit: cover;
     border-radius: 15px 0 0 15px;
@@ -302,27 +327,37 @@ div.cardDescripIcon {
     background-color: coral;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     padding: 3px;
     border-radius: 10px;
 }
-section.article3 {
-background-color: darkslateblue;
-grid-area: article3;
+div.cardDescripIcon h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+div.cardDescripIcon p {
+    margin-bottom: 50px;
+}
+section#article3 {
+    background-color: darkslateblue;
+    grid-area: article3;
 }
 div.article3cards {
-background-color: lightgoldenrodyellow;
-display: flex;
-justify-content: space-around;
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    justify-content: space-around;
 }
 div.artcile3Part1 {
-display: flex;
+    display: flex;
+    margin: 5px;
 }
 div.artcile3Part2 {
-display: flex;
+    display: flex;
+    margin: 5px;
 }
 div.artcile3Relou {
-background-color: wheat;
+    background-color: wheat;
+    margin: 5px;
+    padding: 5px;
 }
 
 /*img.populaireImg1 {
@@ -343,7 +378,13 @@ img.populaireImg3 {
     height: 120px;
     border-radius: 15px 0 0 15px ;
 }*/
-img.activiteImg1 {
+div.cards3Solo img {
+    object-fit: cover;
+    width: 100%;
+    height: 85%;
+    border-radius: 15px 15px 0 0;
+}
+div.cards3 img{
     object-fit: cover;
     width: 100%;
     height: 200px;
@@ -352,36 +393,7 @@ img.activiteImg1 {
 div.cardImgB5 {
 background-color: darkslategray;
 }
-img.activiteImg2 {
-    object-fit: cover;
-    width: 100%;
-    height: 100px;
-    border-radius: 15px 15px 0 0;
-}
-img.activiteImg3 {
-    object-fit: cover;
-    width: 100%;
-    height: 100px;
-    border-radius: 15px 15px 0 0;
-}
-img.activiteImg4 {
-    object-fit: cover;
-    width: 100%;
-    height: 200px;
-    border-radius: 15px 15px 0 0;
-}
-img.activiteImg5 {
-    object-fit: cover;
-    width: 100%;
-    height: 100px;
-    border-radius: 15px 15px 0 0;
-}
-img.activiteImg6 {
-    object-fit: cover;
-    width: 100%;
-    height: 100px;
-    border-radius: 15px 15px 0 0;
-}
+
 div.cardTextB5 {
     background-color: hotpink;
 }
@@ -395,29 +407,30 @@ footer.basDePage a {
 }
 footer.basDePage ul{
     list-style-type: none;
+    padding: 0;
 }
 div.footInfo {
-background-color: lightpink;
-display: flex;
-flex-direction: column;
-flex: 1;
+    background-color: lightpink;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 /*Format tablette*/
 @media screen and (max-width: 992px) and (min-width: 769px) {
         header.navBar {
             background-color: lightpink;
         }
-
+        div#container3 {
+            grid-template-rows: 0.5fr 0.8fr;
+        }
         div.article3cards {
             flex-direction: column;
             justify-content: center;
         }
-
         div.artcile3Part1 {
             justify-content: center;
             margin: 10px;
         }
-        
         div.artcile3Part2 {
             justify-content: center;
             margin: 10px;
@@ -425,10 +438,10 @@ flex: 1;
 } /*Erreur braquette*/
     /*Format mobile*/
     @media screen and (max-width: 768px) {
-    article#container3 {
+    div#container3 {
         grid-template-columns: 1fr;
-        /*grid-template-rows: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 0.5fr);*/
+        /*grid-template-rows: repeat(3, 1fr);*/
+        grid-template-rows: repeat(3, 0.1fr);
         grid-template-areas:
         "article2"
         "article1"
@@ -567,6 +580,6 @@ flex: 1;
         flex: 1;
     }
     div.footInfo {
-        margin: 20px;
+        margin: 10px;
     }
 }
