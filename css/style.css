@@ -11,7 +11,6 @@ html {
 }
 
 body {
-    background-color: whitesmoke;
     max-width: 992px;
    /* max-width: 1000px;*/
     margin: auto;
@@ -84,7 +83,6 @@ main#container2 {
     grid-area: main;
 }
 section#filtersContainer {
-    background-color: #F2F2F2;
     grid-area: section;
 }
 section#filtersContainer h1 {
@@ -95,7 +93,6 @@ section#filtersContainer p {
     font-size: 12px;
 }
 div.rechercheBar {
-    background-color: #F2F2F2;
     display: flex;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -122,8 +119,8 @@ input.searchBar {
     justify-content: center;
     border: none;
     padding: 20px;
-    border-top: 0.5px solid lightslategray;
-    border-bottom: 0.5px solid lightslategray;
+    border-top: 0.5px solid lightgray;
+    border-bottom: 0.5px solid lightgray;
 }
 div.buttonResearch {
     width: 120px;
@@ -142,7 +139,6 @@ div.buttonResearch:hover {
     color: #0065FC;
 }
 div.filters {
-    background-color: #F2F2F2;
     display: flex;
     align-items: center;
 }
@@ -191,7 +187,6 @@ div.filter i {
     left: -5px;
 }
 div.headInformation {
-    background-color: #F2F2F2;
     display: flex;
     align-items: center;
     padding-bottom: 25px;
@@ -223,7 +218,7 @@ div#container3 {
 }
 
 section.article1 {
-    background-color: lightgrey;
+    background-color: lightgray;
     grid-area: article1;
     border-radius: 15px;
     margin: 0px;
@@ -244,9 +239,10 @@ div.artcile1Part1 {
 /*CARDS start*/
 div.cards {
     background-color: white;
+    
     margin: 8px;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 15px;
     width: 30%;
     height: 150px;
 }
@@ -268,7 +264,7 @@ div.artcile1Part1 p {
     font-size: 10px;
 }
 div.cardTextB3 {
-    background-color: beige ;
+    background-color: white ;
 }
 div.starEvaluation {
     display: flex;
@@ -286,7 +282,7 @@ i.starFullIcon {
     font-size: 13px;
 }
 i.starFullIconGrey {
-    color: grey;
+    color: lightgrey;
     margin-right: 0px;
     font-size: 13px;
 }
@@ -300,14 +296,13 @@ div.startEmptyIcon {
     color: gray;
 }
 div.artcile1Part2 {
-    background-color: darkseagreen;
     display: flex;
 }
 div.artcile1Part2 p {
     font-size: 10px;
 }
 aside.article2 {
-    background-color: lightgrey;
+    background-color: lightgray;
     grid-area: article2;
     border-radius: 15px;
     margin: 0px;
@@ -315,7 +310,6 @@ aside.article2 {
     min-width: 90%;
 }
 div.artcile2Title {
-    background-color: darksalmon;
     display: flex;
     padding: 3px;
 }
@@ -326,7 +320,8 @@ div.artcile2Title i {
     margin-left: 40%;
 }
 div.cardsWithIcon {
-    background-color: blue;
+    background-color: white;
+    filter: drop-shadow(0 0 0.15rem gray);
     display: flex;
     /*justify-content: center;*/
     margin: 5px;
@@ -349,7 +344,6 @@ div.cardsWithIcon img{
     border-radius: 15px 0 0 15px;
 }*/
 div.cardDescripIcon {
-    background-color: coral;
     display: flex;
     flex-direction: column;
     padding: 3px;
@@ -376,7 +370,11 @@ div.cardDescripIcon p {
 }
 div.starEvaluation2 {
     margin-left: 10px;
-    padding-top: 30px;
+    padding-top: 45px;
+}
+div.starEvaluation2Relou {
+    margin-left: 10px;
+    padding-top: 35px;
 }
 section#article3 {
     background-color: darkslateblue;
