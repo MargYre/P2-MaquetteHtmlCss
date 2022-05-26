@@ -41,7 +41,6 @@ div#container1 {
 header.navBar{
     background-color: turquoise;
 }
-
 div.headContainer {
     background-color: red;
     display: flex;
@@ -49,14 +48,12 @@ div.headContainer {
 div.logo {
     background-color: #F2F2F2;
     display: flex;
-    /*object-fit: cover;
-    background-image: url("../images/logo/Booki.png");
-    background-size: contain;
-    background-repeat: no-repeat;*/
 }
-div.logo img{
-    width: 100%;
-    height: 100px;
+div.logo img {/*
+    position: relative;
+    left: 10px;*/
+    width: 80%;
+    height: 50px;
 }
 div.hybrid {
     background-color: #F2F2F2;
@@ -81,8 +78,8 @@ main#container2 {
     background-color: purple;
     display: grid;
     grid-template-columns: 1fr;
-    /*grid-template-rows: 0.5fr 3fr;
-    grid-template-rows: 0.1fr 2fr 0.1fr;*/
+    /*grid-template-rows: 0.5fr 3fr;*/
+    grid-template-rows: 1fr;
     grid-template-areas:
     "section"
     "articles";
@@ -92,10 +89,15 @@ section#filtersContainer {
     background-color: #F2F2F2;
     grid-area: section;
 }
+section#filtersContainer h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
 div.rechercheBar {
     background-color: #F2F2F2;
     display: flex;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 div.rechercheBarMobile {
     display: none;
@@ -135,7 +137,6 @@ div.buttonResearch {
 div.buttonResearch:hover {
     background-color: #DEEBFF;
     color: #0065FC;
-    border-radius: 10px;
 }
 div.filters {
     background-color: #F2F2F2;
@@ -145,11 +146,13 @@ div.filters {
 div.filters a {
     text-decoration: none;
 }
+div.filters h2 {
+    margin-right: 10px;
+}
 div.filterRelou {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 div.filterRelou a {
     filter:drop-shadow(0px 0px 1px gray);
@@ -163,23 +166,25 @@ div.filter {
     background-color: gold;
     border: 2px solid lightgrey;
     align-items: center;
-    justify-content: center;
     margin: 10px;
     padding-right: 10px;
     border-radius: 20px;
+    font-weight: bold;
 }
 div.filter i {
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 25px;
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     background-color: lightskyblue;
     color: #0065FC;
     margin-left: -3px;
     margin-top: -2px;
     margin-bottom: -2px;
+    position: relative;
+    left: -5px;
 }
 div.filter a:hover {
     background-color: red;
@@ -204,8 +209,8 @@ div.infomationIcon {
 div#container3 {
     background-color: lightgreen;
     display: grid;
-    grid-template-rows: 0.5fr 0.8fr;
-    /*grid-template-rows: 0.2fr 5fr;*/
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
     "article1 article2"
     "article3 article3";
@@ -438,7 +443,7 @@ div.footInfo {
 } /*Erreur braquette*/
     /*Format mobile*/
     @media screen and (max-width: 768px) {
-    div#container3 {
+        div#container3 {
         grid-template-columns: 1fr;
         /*grid-template-rows: repeat(3, 1fr);*/
         grid-template-rows: repeat(3, 0.1fr);
@@ -457,8 +462,12 @@ div.footInfo {
     div.logo {
         background-color: darkorchid;
         justify-content: center;
-        height: 150px;
+        height: 100px;
         /*background-image: url("../images/logo/Booki@3x.png");*/
+    }
+    div.logo img {
+        width: 100%;
+        height: 100px;
     }
     div.hebergementBar {
         display: flex;
