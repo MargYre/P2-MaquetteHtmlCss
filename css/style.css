@@ -376,6 +376,7 @@ div.starEvaluation2Relou {
     margin-left: 10px;
     padding-top: 35px;
 }
+/*Activités à Marseille Article 3*/
 section#article3 {
     grid-area: article3;
 }
@@ -390,14 +391,15 @@ div.article3cards {
 div.artcile3Part1 {
     background-color: darkred;
     display: flex;
-    margin: 0px;
+    margin-right: 20px;
+    justify-content: space-between;
 }
 div.cards3Solo {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 60%;
     background-color: greenyellow;
+    filter: drop-shadow(0 0 0.15rem gray);
     width: 46%;
     border-radius: 15px;
 }
@@ -407,21 +409,20 @@ div.cards3Solo:hover {
 }
 div.cards3SoloImg {
     width: 100%;
-    height: 350px;
+    height: 300px;
 }
 div.cards3SoloImg img {
     object-fit: cover;
     width: 100%;
-    height: 350px;  
+    height: 300px;  
     border-radius: 15px 15px 0px 0px;
 }
-div.cards3 img {
+/*div.cards3 img {
     object-fit: cover;
     width: 100%;
-    height: 150px;
+    height: 10px;
     border-radius: 15px 15px 0 0;
-}
-
+}*/
 div.cards3SoloText {
     color: black;
     padding: 5px;
@@ -447,8 +448,14 @@ div.artcile3Relou {
 }
 div.cards3Top {
     background-color: cornflowerblue;
+    filter: drop-shadow(0 0 0.15rem gray);
     margin-bottom: 5px;
     border-radius: 15px;
+}
+div.cards3Top:hover {
+    border-radius: 15px;
+    background-color: #DEEBFF;
+    filter:drop-shadow(1px 1px 1px black);
 }
 div.imgDuo1 {
     height: 250px;
@@ -456,14 +463,25 @@ div.imgDuo1 {
 }
 div.imgDuo1 img {
     width: 100%;
-    height: 100%;
+    height: 200px;
     object-fit: cover;
     border-radius: 15px 15px 0px 0px;
 }
+div.cards3DuoText {
+    padding: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
 div.cards3Bot {
     background-color: darkslateblue;
+    filter: drop-shadow(0 0 0.15rem gray);
     margin-top: 5px;
     border-radius: 15px;
+}
+div.cards3Bot:hover {
+    border-radius: 15px;
+    background-color: #DEEBFF;
+    filter:drop-shadow(1px 1px 1px black);
 }
 div.imgDuo2 {
     width: 100%;
@@ -480,6 +498,29 @@ div.artcile3Part2 {
     background-color: magenta;
     display: flex;
     justify-content: space-between;
+    margin-left: 20px;
+}
+div.imgDuo3 {
+    width: 100%;
+    height: 115px;
+}
+div.imgDuo3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    border-radius: 15px 15px 0px 0px;
+}
+div.imgDuo4 {
+    width: 100%;
+    height: 115px;
+}
+div.imgDuo4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    border-radius: 15px 15px 0px 0px;
 }
 /*BAS DE PAGE*/
 footer.basDePage {
