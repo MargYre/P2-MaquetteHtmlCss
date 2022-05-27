@@ -446,13 +446,13 @@ div.cards3Top:hover {
     filter:drop-shadow(1px 1px 1px black);
 }
 div.imgDuo1 {
-    width: 100%;
+    object-fit: cover;
     height: 115px;
 }
 div.imgDuo1 img {
-    width: 100%;
-    height: 150px;
     object-fit: cover;
+    width: 100%;
+    height: 100px;
     border-radius: 15px;
     border-radius: 15px 15px 0px 0px;
 }
@@ -471,8 +471,9 @@ div.cards3Bot {
     height: 140px;
 }
 div.cards3Bot:hover {
-    border-radius: 15px;
     box-shadow: 3px 3px 6px 5px rgb(223, 222, 222);
+    filter:drop-shadow(1px 1px 1px gray);
+    border-radius: 15px;
 }
 div.cards3Bot p {
     position: relative;
@@ -492,6 +493,7 @@ div.imgDuo2 img {
     border-radius: 15px;
     border-radius: 15px 15px 0px 0px;
 }
+/*ARTICLE */
 div.artcile3Part2 {
     display: flex;
     justify-content: space-between;
@@ -744,9 +746,11 @@ div.footInfo {
         flex-direction: column;
     }
     div.artcile1Part2 {
+        background-color: forestgreen;
         flex-direction: column;
     }
     div.cards {
+        background-color: cyan;
         width: unset;
         object-fit: cover;
     }
@@ -761,7 +765,8 @@ div.footInfo {
         width: unset;
     }
     div.cardDescripIcon {
-        width: 50%;
+        background-color: deeppink;
+        width: unset;
         height: 200px;
     }
     div.article2Img {
@@ -773,32 +778,82 @@ div.footInfo {
     div.article2Img img{
         background-color: crimson;
         width: 100%;
-        height: 200px;
+        height: 150px;
     }
     div.article3cards {
         flex-direction: column;
+        margin-right: 10px;
+        margin-left: 10px;
     }
     div.artcile3Part1 {
         flex-direction: column;
+        margin: 0px;
     }
-    /*div.cards3Solo {
+    div.cards3Solo {
         flex-direction: column;
-    }*/
-    div.cards3SoloImg {
         width: 100%;
-        height: 200px;
+        height: 150px;
+        margin-top: 20px;
     }
     div.cards3SoloImg img{
+        height: 100px;
+        object-fit: cover;
+    }
+    div.artcile3Relou {
+        margin: 0px 0px 0px 0px;
+        display: flex;
         width: 100%;
+    }
+    div.cards3Top p {
+        padding: 0px 0px 0px 0px;
+        position: relative;
+        top: 0px;
+        padding-left: 5px;
+    }
+    div.artcile3 {
+        flex-direction: column;
+        width: 95%;
+    }
+    div.cards3Top {
+        height: 150px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
     }
     div.artcile3Part2 {
         flex-direction: column;
+        justify-content: center;
+        margin: 0px;
+        width: 100%;
     }
+    div.cards3TopPart2 {
+        height: 150px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    div.imgDuo3 img {
+        height: 100px;
+       object-fit: cover;
+    }
+    div.cards3BotPart2 {
+        height: 150px;
+        margin-bottom: 30px;
+    }
+    div.imgDuo4 {
+        height: 100px;
+    }
+    /*BAD DE PAGE*/
     footer.basDePage {
+        background-color: lightgrey;
         flex-direction: column;
         flex: 1;
     }
     div.footInfo {
+        background-color: lightgrey;
         margin: 10px;
     }
+    div.footInfo h4 {
+        margin-bottom: 10px;
+    }
+
 }
