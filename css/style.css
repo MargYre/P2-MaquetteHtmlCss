@@ -406,21 +406,22 @@ div.cards3Solo:hover {
     filter:drop-shadow(1px 1px 1px black);
 }
 div.cards3SoloImg {
-    object-fit: cover;
     width: 100%;
     height: 350px;
-    border-radius: 15px 15px 0 0;
-}div.cards3 img {
+}
+div.cards3SoloImg img {
+    object-fit: cover;
+    width: 100%;
+    height: 350px;  
+    border-radius: 15px 15px 0px 0px;
+}
+div.cards3 img {
     object-fit: cover;
     width: 100%;
     height: 150px;
     border-radius: 15px 15px 0 0;
 }
-div.cards3Solo img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-}
+
 div.cards3SoloText {
     color: black;
     padding: 5px;
