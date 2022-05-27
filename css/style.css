@@ -473,6 +473,7 @@ div.cardTextB5 {
 div.artcile3Part2 {
     background-color: magenta;
     display: flex;
+    justify-content: space-between;
     margin-right: 0px;
     padding-right: 0px;
 }
