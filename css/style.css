@@ -239,7 +239,6 @@ div.artcile1Part1 {
 /*CARDS start*/
 div.cards {
     background-color: white;
-    
     margin: 8px;
     padding: 5px;
     border-radius: 15px;
@@ -298,16 +297,18 @@ div.startEmptyIcon {
 div.artcile1Part2 {
     display: flex;
 }
+div.artcile1Part2 h4 {
+    font-size: 13px;
+}
 div.artcile1Part2 p {
     font-size: 10px;
 }
 aside.article2 {
-    background-color: lightgray;
+    background-color: lightgrey;
     grid-area: article2;
     border-radius: 15px;
     margin: 0px;
     padding: 15px;
-    min-width: 90%;
 }
 div.artcile2Title {
     display: flex;
@@ -742,15 +743,35 @@ div.footInfo {
         background-color: unset;
         object-fit: cover;
     }
+    section.article1 h2 {
+        font-size:  20px;
+        margin-bottom: 0px;
+    }
     div.artcile1Part1 {
         flex-direction: column;
     }
+    div.cards {
+        filter: drop-shadow(0 0 0.15rem gray);
+       margin-top: 10px;
+        margin: 35px;
+        padding: 0px;
+        width: 90%;
+    }
+    div.cardTextB3 {
+        padding: 10px;
+        margin-bottom: 5px;
+        border-radius: 15px;
+    }
+    div.cardTextB3 h4 {
+        font-size: 20px;
+        padding: 2px;
+    }
+    div.cardTextB3 p {
+        font-size: 15px;
+        padding: 5px;
+    }
     div.artcile1Part2 {
         flex-direction: column;
-    }
-    div.cards {
-        width: unset;
-        object-fit: cover;
     }
     div.cardImgB3 img {
         object-fit: cover;
@@ -761,6 +782,9 @@ div.footInfo {
     }
     div.artcile2Title {
         justify-content: space-between;
+    }
+    div.artcile2Title  h2 {
+        font-size: 20px;
     }
     div.cardsWithIcon {
         width: unset;
@@ -788,65 +812,110 @@ div.footInfo {
         object-fit: cover;
         border-radius: 15px 0 0 15px;
     }
-    div.article2Img img{
+    div.article2Img img {
+        min-width: 100px;
         width: 100%;
         height: 150px;
     }
+    section#article3  h2 {
+        width: 100%;
+        font-size: 20px;
+    }
     div.article3cards {
         flex-direction: column;
+        margin: 15px;
+        padding: 15px;
         margin-right: 10px;
         margin-left: 10px;
     }
     div.artcile3Part1 {
         flex-direction: column;
+        margin: 15px;
+        padding: 15px;
     }
     div.cards3Solo {
+        object-fit: cover;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         height: 150px;
+        margin: 15px;
+        padding-bottom: 35px;
     }
     div.cards3SoloImg {
-        width: 100%;
+        object-fit: cover;
+        height: 200px;
     }
-    div.cards3SoloImg img{
-        padding: 1px;
-        width: 100%;
+    div.cards3SoloImg img {
+        object-fit: cover;
         height: 150px;
-        justify-content: space-evenly;
-        align-items: center;
     }
     div.artcile3Relou {
+        object-fit: cover;
         margin: 0px 0px 0px 0px;
         display: flex;
-        width: 100%;
-    }
-    div.artcile3 {
-        flex-direction: column;
-        width: 95%;
+        justify-content: space-between;
+        width: 90%;
+        margin: 5px;
+        padding: 5px;
     }
     div.cards3Top {
+        height: 200px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    div.cards3DuoTextCorrect {
+        position: relative;
+        top: -30px;
+    }
+    div.cards3DuoTextCorrect2 {
+        position: relative;
+        top: 15px;
+    }
+    div.imgDuo1 {
         height: 150px;
+    }
+    div.imgDuo1 img {
+        object-fit: cover;
+    }
+    div.cards3Bot {
+        height: 200px;
         margin-top: 30px;
         margin-bottom: 30px;
     }
-    div.cards3BotPart2 {
+    div.imgDuo2 {
         height: 150px;
-        margin-bottom: 30px;
+    }
+    div.imgDuo2 img {
+        height: 150px;
+        object-fit: cover;
     }
     div.artcile3Part2 {
         flex-direction: column;
         width: 95%;
     }
     div.cards3TopPart2 {
-        height: 150px;
+        border: px solid black;
+        height: 200px;
         margin-top: 30px;
         margin-bottom: 30px;
     }
-    div.cards3BotPart2 {
+    div.imgDuo3 {
         height: 150px;
+    }
+    div.imgDuo3 img {
+        object-fit: cover;
+    }
+    div.cards3BotPart2 {
+        height: 200px;
         margin-bottom: 30px;
     }
-    /*BAD DE PAGE*/
+    div.imgDuo4 {
+        height: 150px;
+    }
+    div.imgDuo4 img {
+        object-fit: cover;
+    }
+    /*BAS DE PAGE*/
     footer.basDePage {
         background-color: lightgrey;
         flex-direction: column;
