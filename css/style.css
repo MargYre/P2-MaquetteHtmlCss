@@ -583,9 +583,6 @@ div.footInfo {
 }
 /*Format tablette*/
 @media screen and (max-width: 992px) and (min-width: 769px) {
-        header.navBar {
-            background-color: lightpink;
-        }
         div#container3 {
             grid-template-rows: 0.5fr 0.8fr;
         }
@@ -653,14 +650,32 @@ div.footInfo {
         border-bottom: 3px solid blue;
     }
     main#container2 {
-        background-color: brown;
+        background-color: none;
         /*grid-template-rows: 0.1fr ;*/
      }
     div.hybrid {
         display: none;
     }
+    section#filtersContainer h1 {
+        font-size: 30px;    
+    }
+    section#filtersContainer h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-weight: normal;
+    }
     div.rechercheBar {
         display: none;
+    }
+    div.buttonLocalisationIcon {
+        background-color: lightgrey;
+        display: flex;
+        width: 50px;
+        height: 48px;
+        border-radius: 10px 0px 0px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     div.rechercheBarMobile {
         display: flex;
@@ -670,14 +685,16 @@ div.footInfo {
         padding: 10px;
     }
     div.buttonMagnifyingGlass {
-        width: 10%;
+        width: 9%;
         height: 50px;
         background-color: #0065FC;
+        color: white;
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        border-radius:  0px 10px 10px 0px;
+        border-radius:  15px 15px 15px 15px;
+        margin-left: -15px;
     }
     input.searchBarMobile{
         width: 70%;
@@ -687,8 +704,8 @@ div.footInfo {
         justify-content: center;
         border: none;
         padding: 20px;
-        border-top: 0.5px solid lightslategray;
-        border-bottom: 0.5px solid lightslategray;
+        border-top: 0.5px solid lightgray;
+        border-bottom: 0.5px solid lightgray;
     }
     div.buttonMagnifyingGlass:hover {
         height: 50px;
@@ -700,8 +717,8 @@ div.footInfo {
         display: flex;
         align-items: flex-start;
         justify-content: center;
-        background-color: #DEEBFF;
         flex-direction: column;
+        margin-bottom: 15px;
     }
     div.filters h2 {
         font-size: 25px;
@@ -711,7 +728,14 @@ div.footInfo {
     }
     div.filter {
         justify-content: center;
-    /*margin: auto;*/
+        height: 40px;
+    }
+    div.filter i {
+        height: 45px;
+        width: 45px;
+    }
+    div.filter p {
+        padding-right: 5px;
     }
     section.article1 {
         object-fit: cover;
