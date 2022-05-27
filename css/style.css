@@ -378,19 +378,16 @@ div.starEvaluation2Relou {
 }
 /*Activités à Marseille Article 3!!!!!!!!!!!!!!!!!!!!!!!!!*/
 section#article3 {
-    background-color: grey;
     grid-area: article3;
 }
 section#article3 h2{
     padding-bottom: 15px;
 }
 div.article3cards {
-    background-color: lightpink;
     display: flex;
     justify-content: space-around;
 }
 div.artcile3Part1 {
-    background-color: darkred;
     display: flex;
     margin-right: 20px;
     justify-content: space-between;
@@ -399,8 +396,7 @@ div.cards3Solo {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: greenyellow;
-    filter: drop-shadow(0 0 0.15rem gray);
+    box-shadow: 3px 3px 6px 5px rgb(223, 222, 222);
     width: 46%;
     height: 350px;
     border-radius: 15px;
@@ -418,12 +414,6 @@ div.cards3SoloImg img {
     height: 310px;  
     border-radius: 15px 15px 0px 0px;
 }
-/*div.cards3 img {
-    object-fit: cover;
-    width: 100%;
-    height: 10px;
-    border-radius: 15px 15px 0 0;
-}*/
 div.cards3SoloText {
     color: black;
     padding: 5px;
@@ -437,7 +427,6 @@ div.cards3:hover {
     filter:drop-shadow(1px 1px 1px black);
 }
 div.artcile3Relou {
-    background-color: royalblue;
     display: flex;
     flex-direction: column;
     margin-left: 20px;
@@ -446,8 +435,7 @@ div.artcile3Relou {
     justify-content: space-between;
 }
 div.cards3Top {
-    background-color: cornflowerblue;
-    filter: drop-shadow(0 0 0.15rem gray);
+    box-shadow: 3px 3px 6px 5px rgb(223, 222, 222);
     margin-bottom: 15px;
     border-radius: 15px;
     height: 190px;
@@ -476,8 +464,7 @@ div.cards3Top p {
     padding: 10px;
 }
 div.cards3Bot {
-    background-color: darkslateblue;
-    filter: drop-shadow(0 0 0.15rem gray);
+    box-shadow: 3px 3px 6px 5px rgb(223, 222, 222);
     margin-top: 5px;
     margin-bottom: 0px;
     border-radius: 15px;
@@ -485,8 +472,7 @@ div.cards3Bot {
 }
 div.cards3Bot:hover {
     border-radius: 15px;
-    background-color: #DEEBFF;
-    filter:drop-shadow(1px 1px 1px black);
+    box-shadow: 3px 3px 6px 5px rgb(223, 222, 222);
 }
 div.cards3Bot p {
     position: relative;
@@ -507,17 +493,21 @@ div.imgDuo2 img {
     border-radius: 15px 15px 0px 0px;
 }
 div.artcile3Part2 {
-    background-color: magenta;
     display: flex;
     justify-content: space-between;
     margin-left: 20px;
 }
 div.cards3TopPart2 {
-    background-color: bisque;
-    filter: drop-shadow(0 0 0.15rem gray);
+    background-color: white;
+    box-shadow: 3px 3px 6px 5px rgb(223, 222, 222);
     margin-bottom: 0px;
     border-radius: 15px;
     height: 180px;
+}
+div.cards3TopPart2:hover {
+    border-radius: 15px;
+    background-color: #DEEBFF;
+    filter:drop-shadow(1px 1px 1px black);
 }
 div.cards3TopPart2 p {
     position: relative;
@@ -536,11 +526,16 @@ div.imgDuo3 img {
     border-radius: 15px 15px 0px 0px;
 }
 div.cards3BotPart2 {
-    background-color: brown;
-    filter: drop-shadow(0 0 0.15rem gray);
+    background-color: white;
+    box-shadow: 3px 3px 6px 5px rgb(223, 222, 222);
     margin-bottom: 5px;
     border-radius: 15px;
     margin: 0px 0px 0px 0px;
+}
+div.cards3BotPart2:hover {
+    border-radius: 15px;
+    background-color: #DEEBFF;
+    filter:drop-shadow(1px 1px 1px black);
 }
 div.cards3BotPart2 p {
     position: relative;
