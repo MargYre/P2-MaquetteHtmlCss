@@ -440,42 +440,46 @@ div.cards3:hover {
 div.artcile3Relou {
     display: flex;
     flex-direction: column;
-    background-color: peru ;
+    background-color: none ;
     margin-left: 20px;
     padding: 0px;
     width: 46%;
+}
+div.cards3Top {
+    background-color: cornflowerblue;
+    margin-bottom: 5px;
+    border-radius: 15px;
 }
 div.imgDuo1 {
     height: 250px;
     border-radius: 15px;
 }
 div.imgDuo1 img {
+    width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+div.cards3Bot {
+    background-color: darkslateblue;
+    margin-top: 5px;
     border-radius: 15px;
 }
 div.imgDuo2 {
+    width: 100%;
     height: 115px;
 }
 div.imgDuo2 img {
+    width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
-    margin-top: 5px;
-}
-div.cardImgB5 {
-background-color: purple;
-}
-div.cardTextB5 {
-    background-color: non;
-    
+    border-radius: 15px 15px 0px 0px;
 }
 div.artcile3Part2 {
     background-color: magenta;
     display: flex;
     justify-content: space-between;
-    margin-right: 0px;
-    padding-right: 0px;
 }
 /*BAS DE PAGE*/
 footer.basDePage {
