@@ -7,5 +7,5 @@ Vous êtes chargé d'intégrer l'interface du site avec du code HTML et CSS. Pou
 Sarah vous envoie un e-mail pour vous présenter l’avancée du projet.
 
 ### Technologies Utilisées
- ·HTML5
+ ·HTML5<br>
  ·CSS3
